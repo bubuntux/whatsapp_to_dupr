@@ -1,0 +1,6 @@
+.idea/
+target/
+config.json
+*.csv
+*.txt
+*.zip
