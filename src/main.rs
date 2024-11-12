@@ -19,7 +19,7 @@ fn main() {
         .skip_while(|message| {
             message
                 .date_time
-                .lt(&NaiveDate::parse_from_str("2024-11-07", "%Y-%m-%d")
+                .lt(&NaiveDate::parse_from_str("2024-11-12", "%Y-%m-%d")
                     .unwrap()
                     .into())
         })
@@ -65,7 +65,7 @@ fn get_config() -> Config {
             .map(|alias| format!("@{}", alias))
             .collect();
         player.aliases.extend(new_aliases);
-        player.aliases.sort();
+        //player.aliases.sort();
     });
     config
 }
